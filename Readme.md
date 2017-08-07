@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Victoria Shatskaya](https://up.htmlacademy.ru/htmlcss/18/user/357365).
-* Наставник: [Анатолий Вершинин]
+* Наставник: [Анатолий Вершинин](https://htmlacademy.ru/profile/id81582).
 
 ---
 
