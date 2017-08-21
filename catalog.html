@@ -20,7 +20,9 @@
 </ul>
 
 <ul class="user-navigation">
-	<li class="login">Вход</li>
+	<li class="login">
+  <a class="login" href="login.html">Вход</a>
+  </li>
 	<li class="basket">2 товара</li>
 </ul>
 
@@ -44,8 +46,8 @@
 
   <form>
   <fieldset>
-    <label>Сортировка:
-    <select name="sorting">
+    <label for="sorting-select">Сортировка:
+    <select name="sorting" id="sorting-select">
       <option>по популярности</option>
       <option>сначала недорогие</option>
       <option>сначала дорогие</option>
@@ -55,53 +57,53 @@
     </fieldset>
 
 <fieldset>
-<label>
-  Цена: 100 руб. – 500 руб.<input type="range" min="100" max="500" multiple>
+<label for="price-range">
+  Цена: 100 руб. – 500 руб.<input type="range" min="100" max="500" name="price" id="price-range" multiple>
 </label>
 </fieldset>
 
 <fieldset>
 <p>Жирность:</p>
-<label>
-  <input type="radio" name="fat" value="0%">0%
+<label for="0">
+  <input id="0" type="radio" name="fat" value="0%">0%
 </label>
 
-<label>
-  <input type="radio" name="fat" value="10%" checked>до 10%
+<label for="10">
+  <input id="10" type="radio" name="fat" value="10%" checked>до 10%
 </label>
 
-<label>
-  <input type="radio" name="fat" value="30%">до 30%
+<label for="30">
+  <input id="30" type="radio" name="fat" value="30%">до 30%
 </label>
 
-<label>
-  <input type="radio" name="fat" value="high">выше 30%
+<label for="max">
+  <input id="max" type="radio" name="fat" value="high">выше 30%
 </label>
 </fieldset>
 
 <fieldset>
   <p>Наполнители:</p>
-  <label>
-    <input type="checkbox" checked>шоколадные
+  <label for="chocolate">
+    <input id="chocolate" type="checkbox" checked>шоколадные
   </label>
 
-  <label>
-    <input type="checkbox" checked>сахарные присыпки
+  <label for="sugar">
+    <input id="sugar" type="checkbox" checked>сахарные присыпки
   </label>
 
-  <label>
-    <input type="checkbox">фрукты
+  <label for="fruit">
+    <input id="fruit" type="checkbox">фрукты
   </label>
 
-  <label>
-    <input type="checkbox">сиропы
+  <label for="syrup">
+    <input id="syrup" type="checkbox">сиропы
   </label>
 
-  <label>
-    <input type="checkbox">джемы
+  <label for="jam">
+    <input id="jam" type="checkbox">джемы
   </label>
 
-  <input type="submit" value="Применить">
+  <button class="button" type="submit">Применить</button>
 </fieldset>
 
   </form>
@@ -110,8 +112,9 @@
   <ul class="catalog-list">
 
     <li class="catalog-item">
+    <a href="catalog-item.html">
       <div class="catalog-item-image">
-        <a href="catalog-item.html"><img src="img/icecream-hit-1.jpg" width="267" height="267" alt="Image of icecream"></a>
+        <img src="img/icecream-hit-1.jpg" width="267" height="267" alt="Image of icecream">
       </div>
       <div class="catalog-item-price">
             <span>310 ₽</span>
@@ -120,11 +123,13 @@
           <div class="catalog-item-about">
             <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
           </div>
+          </a>
     </li>
 
 <li class="catalog-item">
+<a href="catalog-item.html">
       <div class="catalog-item-image">
-        <a href="catalog-item.html"><img src="img/icecream-hit-2.jpg" width="267" height="267" alt="Image of icecream"></a>
+        <img src="img/icecream-hit-2.jpg" width="267" height="267" alt="Image of icecream">
       </div>
       <div class="catalog-item-price">
             <span>380 ₽</span>
@@ -133,11 +138,13 @@
           <div class="catalog-item-about">
             <p>Сливочно-кофейное с кусочками шоколада</p>
           </div>
+          </a>
     </li>
 
     <li class="catalog-item catalog-item-current">
+    <a href="catalog-item.html">
       <div class="catalog-item-image">
-        <a href="catalog-item.html"><img src="img/icecream-hit-3.jpg" width="267" height="267" alt="Image of icecream"></a>
+        <img src="img/icecream-hit-3.jpg" width="267" height="267" alt="Image of icecream">
       </div>
       <div class="catalog-item-price">
             <span>355 ₽</span>
@@ -146,11 +153,13 @@
           <div class="catalog-item-about">
             <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
           </div>
+          </a>
     </li>
 
     <li class="catalog-item">
+    <a href="catalog-item.html">
       <div class="catalog-item-image">
-        <a href="catalog-item.html"><img src="img/icecream-hit-4.jpg" width="267" height="267" alt="Image of icecream"></a>
+        <img src="img/icecream-hit-4.jpg" width="267" height="267" alt="Image of icecream">
       </div>
       <div class="catalog-item-price">
             <span>415 ₽</span>
@@ -159,24 +168,28 @@
           <div class="catalog-item-about">
             <p>Сливочное крем-брюле с карамельной подливкой</p>
           </div>
+          </a>
     </li>
 
     <li class="catalog-item">
+    <a href="catalog-item.html">
       <div class="catalog-item-image">
-        <a href="catalog-item.html"><img src="img/icecream-catalog-5.jpg" width="267" height="267" alt="Image of icecream"></a>
+        <img src="img/icecream-catalog-5.jpg" width="267" height="267" alt="Image of icecream">
       </div>
       <div class="catalog-item-price">
             <span>325 ₽</span>
             <span>/кг</span>
           </div>
           <div class="catalog-item-about">
-            <p><Сливочное с брусничным джемом/p>
+            <p><Сливочное с брусничным джемом</p>
           </div>
+         </a>
     </li>
 
     <li class="catalog-item">
+    <a href="catalog-item.html">
       <div class="catalog-item-image">
-        <a href="catalog-item.html"><img src="img/icecream-catalog-6.jpg" width="267" height="267" alt="Image of icecream"></a>
+        <img src="img/icecream-catalog-6.jpg" width="267" height="267" alt="Image of icecream">
       </div>
       <div class="catalog-item-price">
             <span>410 ₽</span>
@@ -185,11 +198,13 @@
           <div class="catalog-item-about">
             <p>Сливочно-черничное с цельными ягодами черники</p>
           </div>
+          </a>
     </li>
 
     <li class="catalog-item">
+    <a href="catalog-item.html">
       <div class="catalog-item-image">
-        <a href="catalog-item.html"><img src="img/icecream-catalog-7.jpg" width="267" height="267" alt="Image of icecream"></a>
+        <img src="img/icecream-catalog-7.jpg" width="267" height="267" alt="Image of icecream">
       </div>
       <div class="catalog-item-price">
             <span>375 ₽</span>
@@ -198,11 +213,13 @@
           <div class="catalog-item-about">
             <p>Сливочно-лимонное с карамельной присыпкой</p>
           </div>
+          </a>
     </li>
 
     <li class="catalog-item">
+    <a href="catalog-item.html">
       <div class="catalog-item-image">
-        <a href="catalog-item.html"><img src="img/icecream-catalog-8.jpg" width="267" height="267" alt="Image of icecream"></a>
+        <img src="img/icecream-catalog-8.jpg" width="267" height="267" alt="Image of icecream">
       </div>
       <div class="catalog-item-price">
             <span>320 ₽</span>
@@ -211,11 +228,13 @@
           <div class="catalog-item-about">
             <p>Сливочное с шоколадной стружкой</p>
           </div>
+          </a>
     </li>
 
     <li class="catalog-item">
+    <a href="catalog-item.html">
       <div class="catalog-item-image">
-        <a href="catalog-item.html"><img src="img/icecream-catalog-9.jpg" width="267" height="267" alt="Image of icecream"></a>
+        <img src="img/icecream-catalog-9.jpg" width="267" height="267" alt="Image of icecream">
       </div>
       <div class="catalog-item-price">
             <span>440 ₽</span>
@@ -224,11 +243,13 @@
           <div class="catalog-item-about">
             <p>Сливочно-ванильное с кусочками шоколада</p>
           </div>
+          </a>
     </li>
 
     <li class="catalog-item">
+    <a href="catalog-item.html">
       <div class="catalog-item-image">
-        <a href="catalog-item.html"><img src="img/icecream-catalog-10.jpg" width="267" height="267" alt="Image of icecream"></a>
+        <img src="img/icecream-catalog-10.jpg" width="267" height="267" alt="Image of icecream">
       </div>
       <div class="catalog-item-price">
             <span>435 ₽</span>
@@ -237,11 +258,13 @@
           <div class="catalog-item-about">
             <p>Сливочноe с ментоловым сиропом</p>
           </div>
+          </a>
     </li>
 
     <li class="catalog-item">
+    <a href="catalog-item.html">
       <div class="catalog-item-image">
-        <a href="catalog-item.html"><img src="img/icecream-catalog-11.jpg" width="267" height="267" alt="Image of icecream"></a>
+        <img src="img/icecream-catalog-11.jpg" width="267" height="267" alt="Image of icecream">
       </div>
       <div class="catalog-item-price">
             <span>355 ₽</span>
@@ -250,11 +273,13 @@
           <div class="catalog-item-about">
             <p>Сливочное с кусочками черного шоколада</p>
           </div>
+          </a>
     </li>
 
     <li class="catalog-item">
+    <a href="catalog-item.html">
       <div class="catalog-item-image">
-        <a href="catalog-item.html"><img src="img/icecream-catalog-12.jpg" width="267" height="267" alt="Image of icecream"></a>
+        <img src="img/icecream-catalog-12.jpg" width="267" height="267" alt="Image of icecream">
       </div>
       <div class="catalog-item-price">
             <span>420 ₽</span>
@@ -263,6 +288,7 @@
           <div class="catalog-item-about">
             <p>Сливочное с мятным сиропом</p>
           </div>
+          </a>
     </li>
   </ul>
 
@@ -304,6 +330,30 @@
     </p>
 
 </footer>
+
+
+<section class="modal modal-login">
+  <form class="login-form">
+
+  <div class="login-item">
+    <label for="user-email" class="visually-hidden">Электронная почта</label>
+    <input id="user-email" type="text" name="email" placeholder="Электронная почта">
+    </div>
+
+<div class="login-item">
+  <label for="user-password" class="visually-hidden">Пароль</label>
+  <input id="user-password" type="text" name="password" placeholder="Пароль">
+</div>
+
+<button class="button" type="submit">Войти</button>
+
+<div class="login-info">
+  <a class="restore" href="#">Забыли пароль?</a>
+  <a class="sign-in" href="">Новая регистрация</a>
+</div>
+
+  </form>
+</section>
 
 
   </body>

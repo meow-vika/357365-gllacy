@@ -20,7 +20,9 @@
 </ul>
 
 <ul class="user-navigation">
-	<li class="login">Вход</li>
+	<li class="login">
+	<a class="login" href="login.html">Вход</a>
+	</li>
 	<li class="basket">Пусто</li>
 </ul>
 
@@ -70,31 +72,39 @@
 	<ul class="popular-icecream">
 
 		<li class="popular-icecream-item">
+		<a href="catalog.html">
 			<img src="img/icecream-hit-1.jpg" width="267" height="267" alt="Сливочное с апельсином">
 			<span>310 ₽</span>
 		<span>/кг</span>
 		<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+		</a>
 		</li>
 
 <li class="popular-icecream-item">
+<a href="catalog.html">
 <img src="img/icecream-hit-2.jpg" width="267" height="267" alt="Сливочно-кофейное">
 			<span>380 ₽</span>
 		<span>/кг</span>
 		<p>Сливочно-кофейное с кусочками шоколада</p>
+		</a>
 		</li>
 
 		<li class="popular-icecream-item">
+		<a href="catalog.html">
 			<img src="img/icecream-hit-3.jpg" width="267" height="267" alt="Сливочно-клубничное">
 			<span>355 ₽</span>
 		<span>/кг</span>
 		<p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+		</a>
 		</li>
 
 		<li class="popular-icecream-item">
+		<a href="catalog.html">
 			<img src="img/icecream-hit-4.jpg" width="267" height="267" alt="Сливочноt Крем-брюле">
 			<span>415 ₽</span>
 		<span>/кг</span>
 		<p>Сливочное крем-брюле с карамельной подливкой</p>
+		</a>
 		</li>
 
 	</ul>
@@ -135,8 +145,9 @@
 <p class="subscription-info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 	
 <form method="post">
+<label for="email-field" class="visually-hidden">Электронная почта</label>
 	<input type="text" name="email" id="email-field" placeholder="Электронная почта">
-<input type="submit" value="Отправить">
+	<button class="button" type="submit">Отправить</button>
 </form>
 
 </section>
@@ -189,12 +200,44 @@
 <section class="modal modal-feedback">
 	<p>Мы обязательно вам ответим!</p>
 	<form class="feedback-form" method="post">
-		<input type="text" name="name" placeholder="Как вас зовут?">
-		<input type="text" name="email" placeholder="Ваша почта для ответа?">
-		<textarea name="comment" id="comment-field">Напишите что-нибудь...</textarea>
-		<input type="submit" value="Отправить">
+	<label for="feedback-name" class="visually-hidden">Как вас зовут?</label>
+		<input id="feedback-name" type="text" name="name" placeholder="Как вас зовут?">
+
+<label for="feedback-email" class="visually-hidden">Ваша почта для ответа?</label>
+		<input id="feedback-email" type="text" name="email" placeholder="Ваша почта для ответа?">
+
+	<label for="comment-field" class="visually-hidden">Напишите что-нибудь</label>	
+<textarea name="comment" id="comment-field">Напишите что-нибудь...</textarea>
+
+
+<button class="button" type="submit">Отправить</button>
+
 	</form>
-	<span class="modal-close">x</span>
+	<button class="model-close" type="button">Закрыть</button>
+</section>
+
+<section class="modal modal-login">
+	<form class="login-form">
+
+	<div class="login-item">
+		<label for="user-email" class="visually-hidden">Электронная почта</label>
+		<input id="user-email" type="text" name="email" placeholder="Электронная почта">
+		</div>
+
+<div class="login-item">
+	<label for="user-password" class="visually-hidden">Пароль</label>
+	<input id="user-password" type="text" name="password" placeholder="Пароль">
+</div>
+
+<button class="button" type="submit">Войти</button>
+
+<div class="login-info">
+	<a class="restore" href="#">Забыли пароль?</a>
+	<a class="sign-in" href="">Новая регистрация</a>
+</div>
+
+	</form>
+	<button class="model-close" type="button">Закрыть</button>
 </section>
     
 
