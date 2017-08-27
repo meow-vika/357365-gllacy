@@ -1,20 +1,355 @@
 body {
+	margin: 0;
+	padding: 0;
 	font-size: 16px;
 	line-height: 22px;
 	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	color: #fff;
+	background-color: #8ba597;
 }
 
-h1 {
+a {
+	text-decoration: none;
+}
+
+.button {
+	font: inherit;
+	font-weight: 700;
+font-size: 18px;
+line-height: 24px;
+	text-align: center;
+	background-color: #ed5b3d;
+	color: #fff;
+	border: none;
+}
+
+.button:hover {
+	background-color: #ef7661;
+	color: #fff;
+}
+
+.button:active {
+	background-color: #db5338;
+	color: #fff;
+}
+
+.slide-button {
+	font: inherit;
+	font-size: 32px;
+	line-height: 44px;
+	text-align: center;
+}
+
+.main-navigation {
+	font-size: 16px;
+	line-height: 18px;
+	color: #fff;
+}
+
+.site-navigation,
+.user-navigation,
+.submenu {
+	list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+	color: #fff;
+	font-weight: 400;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+	background-color: #f7f6f3;
+	color: #333333;
+}
+
+
+.site-navigation-item-current {
+	background-color: #d07058;
+	color: #fff;
+}
+
+.submenu {
+	background-color: #f8f7f4;
+}
+
+.submenu a {
+	color: #323232;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.submenu li:first-child {
+	font-weight: 700;
+	border-bottom: 1px solid #d1d0ce;
+}
+
+.submenu a:hover {
+	color: #323232;
+	background-color: #fbded7;
+}
+
+.submenu a:active {
+	background-color: #f6b5a5;
+}
+
+
+.slide {
+	list-style: none;
+}
+
+.slide-title {
 	font-size: 60px;
-	font-family: 'Roboto';
-	font-weight: bold;
+	line-height: 60px;
+	text-align: center;
 }
 
-h2 {
+.gifts h2 {
 	font-size: 35px;
 	line-height: 41px;
-	font-family: 'Roboto';
-	font-weight: bold;
+}
+
+.raspberry-gift {
+	color: #fff;
+	background-color: #6d0013;
+	background-image: url("../img/raspberry-bg.jpg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.chocolate-gift {
+	color: #fff;
+	background-color: #8c695f;
+	background-image: url("../img/chocolate-bg.jpg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.catalog-item-title {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+	color: #fff;
+	text-decoration: underline;
+}
+
+.feature-list {
+	list-style: none;
+}
+
+.feature-title {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 500;
+	color: #323232;
+}
+
+.feature-item {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+color: #323232;
+}
+
+.features {
+	background-color: #e4d2b3;
+	background-image: url("../img/wafer.jpg");
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+
+.news-blog {
+	background-color: #fff;
+	background-image: url("../img/bg-news.jpg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.news-blog h4 {
+	color: #323232;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+}
+
+.news-blog a {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+	text-decoration: underline;
+	color: #323232;
+}
+
+.news-subscription {
+background-color: #f8f7f4;
+background-image: url("../img/bg-post.svg");
+background-position: 0 0;
+background-repeat: no-repeat;
+}
+
+.news-subscription-info {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #5a5a5a;
+}
+
+.news-subscription-form input,
+.feedback-form input,
+.feedback-form textarea,
+.search-box input {
+	font: inherit;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #999;
+	border: 1px solid #999999;
+}
+
+.news-subscription-form input:hover,
+.feedback-form input:hover,
+.feedback-form textarea:hover,
+.search-box input:hover {
+	border: 1px solid #999999;
+}
+
+.news-subscription-form input:focus,
+.feedback-form input:focus,
+.feedback-form textarea:focus,
+.search-box input:focus {
+	border: 2px solid #5b9ddf;
+}
+
+.news-subscription-form input:active,
+.feedback-form input:active,
+.feedback-form textarea:active,
+.search-box input:active {
+	border: 2px solid #999999;
+	color: #323232;
+}
+
+.location {
+	background-color: #fefefe;
+}
+
+.location p {
+	font-size: 14px;
+	line-height: 20px;
+	color: #323232;
+	font-weight: 400;
+}
+
+.location span {
+	font-size: 18px;
+	line-height: 24px;
+	color: #323232;
+	font-weight: 700;
+}
+
+.page-title {
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: 700;
+}
+
+.breadcrumbs-list {
+	list-style: none;
+}
+
+.breadcrumbs-list-link {
+	color: #fff;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+	text-decoration: underline;
+}
+
+.breadcrumbs-list-item-current {
+	color: #fff;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+}
+
+.breadcrumbs-list-link:hover,
+.breadcrumbs-list-link:focus,
+.footer-info a:hover,
+.footer-info a:focus {
+	color: #ffbc9e;
+}
+
+.modal-feedback {
+	background-color: #f8f7f4;
+}
+
+.feedback-title {
+	color: #323232;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 500;
+}
+
+.filters fieldset {
+	border: none;
+}
+
+.sorting-filter label,
+.price-filter label,
+.fat-filter h3,
+.fillers-filter h3  {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+}
+
+.catalog-item:hover {
+	background-color: #9db1a5;
+	box-shadow: 20px 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.catalog-item-price span:first-child {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+}
+
+.catalog-item-price span:last-child {
+	font-size: 30px;
+	line-height: 45px;
+	font-weight: 500;
+}
+
+.pagination-list {
+	list-style: none;
+}
+
+.pagination-item a {
+	color: #fff;
+}
+
+.pagination-item a:hover {
+	background-color: #9db1a5;
+}
+
+.pagination-item a:active {
+	background-color: #fff;
+	color: #323232;
+}
+
+.pagination-item-current a {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #353535;
+	background-color: #fff;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:active {
+	color: #353535;
+	background-color: #fff;
 }
 
 .visually-hidden {
@@ -25,4 +360,36 @@ h2 {
 	margin: -1px;
 	padding: 0;
 	border: 0;
+}
+
+.footer-social {
+	text-align: left;
+}
+
+.footer-social ul {
+	list-style: none;
+}
+
+.footer-social-link {
+	color: #e6ebe9;
+}
+
+.footer-info {
+	text-align: center;
+}
+
+.footer-info-list {
+	list-style: none;
+	text-decoration: underline;
+}
+
+.footer-info-item a {
+	color: #fff;
+}
+
+.footer-copyright a {
+	color: #fff;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
 }
