@@ -13,65 +13,65 @@
 <body>
   <!--Хэдер-->
   <header class="main-header container">
-    <div class="main-header-logo">
-      <a href="index.html">
-          <img src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy">
-        </a>
-    </div>
 
     <nav class="main-navigation">
-      <ul class="site-navigation">
-        <li class="site-navigation-item"><a class="site-navigation-item-current" href="catalog.html">Каталог</a>
-          <ul class="submenu">
-            <li class="submenu-item"><a href="#">Новинки</a></li>
-            <li class="submenu-item"><a href="#">Сливочное</a></li>
-            <li class="submenu-item"><a href="#">Щербеты</a></li>
-            <li class="submenu-item"><a href="#">Фруктовый лед</a></li>
-            <li class="submenu-item"><a href="#">Мелорин</a></li>
-          </ul>
-        </li>
-        <li class="site-navigation-item"><a href="delivery.html">Доставка и оплата</a></li>
-        <li class="site-navigation-item"><a href="info.html">О компании</a></li>
-      </ul>
+      <div class="main-navigation-left">
+        <a href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy"></a>
+        <ul class="site-navigation">
+          <li class="site-navigation-item"><a class="site-navigation-item-current" href="catalog.html">Каталог</a>
+            <ul class="submenu">
+              <li class="submenu-item"><a href="#">Новинки</a></li>
+              <li class="submenu-item"><a href="#">Сливочное</a></li>
+              <li class="submenu-item"><a href="#">Щербеты</a></li>
+              <li class="submenu-item"><a href="#">Фруктовый лед</a></li>
+              <li class="submenu-item"><a href="#">Мелорин</a></li>
+            </ul>
+          </li>
+          <li class="site-navigation-item"><a href="delivery.html">Доставка и оплата</a></li>
+          <li class="site-navigation-item"><a href="info.html">О компании</a></li>
+        </ul>
+      </div>
 
-      <ul class="user-navigation">
-        <li class="user-navigation-item search">
-          <a href="#">Лупа</a>
-          <div class="search-box">
-            <form action="get">
-              <label for="search" class="visually-hidden">Поиск</label>
-              <input id="search" type="search" placeholder="Что ищем?">
-            </form>
-          </div>
-        </li>
-        <li class="user-navigation-item login">
-          <a class="login-link" href="login.html">Вход</a>
-          <div class="login-box">
-            <!--Форма входа-->
-            <form class="login-form">
+      <div class="main-navigation-right">
+        <ul class="user-navigation">
+          <li class="user-navigation-item search">
+            <a href="#">Лупа</a>
+            <div class="search-box">
+              <form action="get">
+                <label for="search" class="visually-hidden">Поиск</label>
+                <input id="search" type="search" placeholder="Что ищем?">
+              </form>
+            </div>
+          </li>
+          <li class="user-navigation-item login">
+            <a class="login-link" href="login.html">Вход</a>
+            <div class="login-box">
+              <!--Форма входа-->
+              <form class="login-form">
 
-              <div class="login-form-item">
-                <label for="user-email" class="visually-hidden">Электронная почта</label>
-                <input id="user-email" type="text" name="email" placeholder="Электронная почта">
-              </div>
-
-              <div class="login-form-item">
-                <label for="user-password" class="visually-hidden">Пароль</label>
-                <input id="user-password" type="text" name="password" placeholder="Пароль">
-              </div>
-
-              <div class="fix">
-                <button class="button login-form-button" type="submit">Войти</button>
-                <div class="login-info">
-                  <a class="login-info-restore" href="#">Забыли пароль?</a>
-                  <a class="login-info-sign-in" href="">Новая регистрация</a>
+                <div class="login-form-item">
+                  <label for="user-email" class="visually-hidden">Электронная почта</label>
+                  <input id="user-email" type="text" name="email" placeholder="Электронная почта">
                 </div>
-              </div>
-            </form>
-          </div>
-        </li>
-        <li class="user-navigation-item basket">2 товара</li>
-      </ul>
+
+                <div class="login-form-item">
+                  <label for="user-password" class="visually-hidden">Пароль</label>
+                  <input id="user-password" type="text" name="password" placeholder="Пароль">
+                </div>
+
+                <div class="fix">
+                  <button class="button login-form-button" type="submit">Войти</button>
+                  <div class="login-info">
+                    <a class="login-info-restore" href="#">Забыли пароль?</a>
+                    <a class="login-info-sign-in" href="">Новая регистрация</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </li>
+          <li class="user-navigation-item basket">2 товара</li>
+        </ul>
+      </div>
     </nav>
     <div class="contact-info">
       <p>с 10 до 20, ежедневно<br>8 812 450-25-25</p>
@@ -79,7 +79,7 @@
 
   </header>
   <!--Основная часть-->
-  <main class="container">
+  <main class="contant">
 
     <!--Крошки-->
     <div class="breadcrumbs">
@@ -163,6 +163,7 @@
 
     <!--Каталог-->
     <section class="catalog">
+
       <div class="catalog-item">
         <div class="catalog-item-image">
           <img src="img/icecream-hit-1.jpg" width="267" height="267" alt="Image of icecream">
@@ -307,18 +308,21 @@
           <a href="catalog-item.html"><h3 class="catalog-item-title">Сливочное с мятным сиропом</h3></a>
         </div>
       </div>
-      <!--Навигация каталога-->
-      <div class="pagination">
-        <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a class="pagination-link-current">1</a></li>
-          <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
-          <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
-          <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
-          <li class="pagination-item"><a class="pagination-link" href="#">5</a></li>
-        </ul>
+
 
       </div>
     </section>
+    <!--Навигация каталога-->
+    <div class="pagination">
+      <ul class="pagination-list">
+        <li class="pagination-item pagination-item-current"><a class="pagination-link-current">1</a></li>
+        <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
+        <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
+        <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
+        <li class="pagination-item"><a class="pagination-link" href="#">5</a></li>
+      </ul>
+
+
 
   </main>
 
