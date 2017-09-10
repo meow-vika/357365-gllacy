@@ -239,7 +239,7 @@ img {
   content: "";
   display: block;
   position: absolute;
-  width: 115px;
+  width: 116px;
   height: 1px;
   left: 6px;
   bottom: 0;
@@ -277,8 +277,6 @@ img {
 .user-navigation-item .full-basket:hover polygon {
   fill: #e84d37;
 }
-
-
 /**Окно поиска**/
 
 .search {
@@ -289,13 +287,10 @@ display: block;
   padding: 0;
 }
 
-
-
 .search-link {
   position: relative;
   display: inline-block;
 }
-
 
 .search .search-icon {
   position: absolute;
