@@ -258,7 +258,6 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 267px;
-  margin-bottom: auto;
   margin-top: 14px;
 }
 
@@ -268,6 +267,7 @@ img {
   padding-bottom: 5px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 32px;
+  margin: 0;
 }
 
 .user-navigation-item:not(.full-basket):hover path, .user-navigation-item:not(.full-basket):hover circle, .user-navigation-item:not(.full-basket):hover polygon {
@@ -283,15 +283,19 @@ img {
 
 .search {
   position: relative;
-  display: block;
+display: block;
   width: 32px;
   height: 32px;
   padding: 0;
 }
 
+
+
 .search-link {
   position: relative;
+  display: inline-block;
 }
+
 
 .search .search-icon {
   position: absolute;
@@ -311,13 +315,25 @@ img {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   width: 345px;
   right: 0;
-  top: 100%;
-  margin-top: 5px;
+  top: 35px;
+}
+
+.search-box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  top: -30px;
+  right: 0;
+  width: 347px;
+  height: 30px;
 }
 
 .search:hover .search-box {
   display: block;
+
 }
+
 
 .search-form .form-field {
   box-sizing: border-box;
@@ -379,17 +395,29 @@ img {
 .login .login-box {
   display: none;
   position: absolute;
-  z-index: 1;
+  z-index: 4;
+  top: 36px;;
+  right: 0;
   width: 277px;
   background-color: #f8f7f4;
   color: #323232;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   right: 0;
   border-radius: 5px;
-  margin-top: 5px;
 }
 
-.login:hover .login-box, .login:focus .login-box {
+.login-box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  top: -30px;
+  right: 0;
+  width: 92px;
+  height: 35px;
+}
+
+.login:hover .login-box {
   display: block;
   position: absolute;
 }
@@ -426,6 +454,10 @@ img {
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
+}
+
+.login-info-restore:hover, .login-info-signin:hover {
+  color: #e84d37;
 }
 
 .user-navigation-item:hover .login-link, .user-navigation-item:hover .basket-link {
@@ -494,14 +526,25 @@ img {
 
 .full-basket .basket-box {
   display: none;
-  top: 100%;
+  top: 36px;;
   right: 0;
   position: absolute;
   background-color: #f8f7f4;
   width: 540px;
   padding: 20px 15px;
-  z-index: 2;
+  z-index: 5;
   border-radius: 5px;
+}
+
+.basket-box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  top: -30px;
+  right: 0;
+  width: 117px;
+  height: 35px;
 }
 
 .basket-box .basket-list {
@@ -809,6 +852,10 @@ img {
 
 /**Популярные товары**/
 
+.popular {
+  margin-bottom: 40px;
+}
+
 .popular-list {
   margin: 0;
   padding: 0;
@@ -816,7 +863,6 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
-  margin-bottom: 40px;
 }
 
 .popular-item {
@@ -1090,6 +1136,7 @@ img {
   margin-top: 35px;
   margin-left: 20px;
   padding-left: 10px;
+  padding-right: 10px;
   width: 368px;
   height: 44px;
 }
@@ -1099,6 +1146,11 @@ img {
   margin-right: 10px;
   width: 130px;
   height: 45px;
+  cursor: pointer;
+}
+
+.subscription-button:active .modal {
+  display: block;
 }
 
 .news-subscription-form .form-label {
@@ -1179,6 +1231,10 @@ img {
   padding-top: 10px;
   text-align: center;
   border-radius: 25px;
+}
+
+.address-button:active .modal {
+  display: block;
 }
 
 
@@ -1672,20 +1728,21 @@ img {
   position: relative;
 }
 
-.social-link svg {
-  fill: rgba(255, 255, 255, 0.8);
-  border: 2px solid rgba(255, 255, 255, 0.47);
+.social-link {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
   border-radius: 50%;
 }
 
-.social-link:hover svg {
-  fill-opacity: 1;
-  border: 2px solid rgb(218, 226, 222);
+.social-link:hover {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.7);
 }
 
-.social-link:active svg {
-  fill: rgb(233, 233, 233);
-  border: 2px solid rgb(218, 226, 222);
+.social-link:active {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.7),
+              inset 0px 2px 1px 0px black;
 }
 
 .info-list {
@@ -1763,11 +1820,18 @@ img {
 
 /**Окно обратной связи**/
 
+
 .modal {
   display: none;
   top: 120px;
   left: 50%;
   margin-left: -230px;
+  position: fixed;
+  z-index: 100;
+}
+
+.modal-show {
+  display: block;
   position: fixed;
 }
 
@@ -1809,7 +1873,7 @@ img {
   height: 155px;
 }
 
-.modal-close {
+.modal-close-button {
   display: block;
   position: absolute;
   top: 15px;
@@ -1818,6 +1882,7 @@ img {
   height: 17px;
   border: none;
   background: url("../img/cross-big.svg") no-repeat;
+  cursor: pointer;
 }
 
 .feedback-form .form-field+.form-item .form-label {
@@ -1868,6 +1933,7 @@ img {
   color: #fff;
   border: none;
   border-radius: 100px;
+
 }
 
 .button:hover {

@@ -11,6 +11,7 @@
 </head>
 
 <body class="index-page">
+  <div class="overlay"></div>
   <input type="radio" id="button-1" name="toggle" checked>
   <input type="radio" id="button-2" name="toggle">
   <input type="radio" id="button-3" name="toggle">
@@ -24,7 +25,7 @@
           <ul class="site-navigation">
             <li class="site-navigation-item"><a class="site-navigation-link" href="catalog.html">Каталог</a>
               <ul class="submenu">
-                <span class="submenu-title">Новинки</span>
+                <li class="submenu-title">Новинки</li>
                 <li class="submenu-item">
                   <a class="submenu-link" href="#">Сливочное</a>
                 </li>
@@ -49,12 +50,12 @@
         <div class="user-block">
           <nav class="user-navigation">
             <div class="user-navigation-item search">
-              <div class="search-link">
+              <a class="search-link">
                 <div class="search-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="17" height="17" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
                   <image overflow="visible" width="17" height="17" />
                   <path fill="#FFFFFF" d="M17 15.5L11.8 10.3C12.5 9.2 13 7.9 13 6.5 13 2.9 10.1 0 6.5 0S0 2.9 0 6.5 2.9 13 6.5 13c1.4 0 2.8-0.5 3.8-1.3l5.2 5.2L17 15.5zM6.5 11C4 11 2 9 2 6.5S4 2 6.5 2 11 4 11 6.5 9 11 6.5 11z" /></svg>
-                </div>
+              </a>
               </div>
               <div class="search-box">
                 <form class="search-form" action="#" method="get">
@@ -385,12 +386,42 @@
 
         <button class="button feedback-button" type="submit">Отправить</button>
       </form>
-      <button class="modal-close" type="button">
-      <span class="visually-hidden">Закрыть</span>
-    </button>
+      <button class="modal-close-button" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </div>
   </section>
 
+  <script type="text/javascript">
+    var link = document.querySelector(".address-button");
+    var modal = document.querySelector(".modal");
+    var close = modal.querySelector(".modal-close-button");
+    var form = modal.querySelector("form");
+    var email = modal.querySelector("[name=email]");
+    var comment = modal.querySelector("[name=comment]");
+    var storage = localStorage.getItem("email");
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+      modal.classList.add("modal-show");
+      var name = modal.querySelector("[name=name]");
+      if (storage) {
+        email.value = storage;
+      }
+      name.focus();
+    });
+    close.addEventListener("click", function(e) {
+      e.preventDefault();
+      modal.classList.remove("modal-show");
+    });
+    form.addEventListener("submit", function(e) {
+      if (!name.value || !email.value) {
+        e.preventDefault();
+        console.log("Нужно заполнить");
+      } else {
+        localStorage.setItem("email", email.value);
+      }
+    });
+  </script>
 </body>
 
 </html>
