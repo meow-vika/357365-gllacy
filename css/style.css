@@ -1258,7 +1258,8 @@ img {
   font-size: 14px;
   line-height: 16px;
   color: #fff;
-  font-weight: 500;
+  font-weight: 400;
+  padding-left: 15px;
 }
 
 .sorting-select {
@@ -1346,14 +1347,14 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 7px 15px;
+  padding: 5px 15px;
   width: 415px;
   height: 37px;
   background-color: rgba(248, 247, 244, 0.2);
   border-radius: 25px;
   color: #fff;
   font-weight: 400;
-  margin-top: 6px;
+
 }
 
 .fat-filter .filter-label {
@@ -1393,6 +1394,10 @@ img {
 
 .fillers-filter {
   margin-top: 15px;
+}
+
+.fillers-filter .filter-label {
+  font-weight: 400;
 }
 
 .filler-filter-wrapper {
