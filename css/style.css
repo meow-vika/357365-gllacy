@@ -797,7 +797,6 @@ img {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
-
 }
 
 .gift {
@@ -1196,14 +1195,14 @@ img {
   width: 100%;
   height: 430px;
   background-size: cover;
-
+  position: relative;
   z-index: 1;
 }
 
 .address iframe {
   width: 100%;
   height: 430px;
-border: none;
+  border: none;
   z-index: 2;
 }
 
@@ -1215,11 +1214,9 @@ border: none;
   padding: 30px 25px;
   background-color: #fefefe;
   border-radius: 15px;
-  top: -370px;
-  right: 27px;
-  margin-left: auto;
   z-index: 3;
-
+  top: 60px;
+  right: 55px;
 }
 
 .address-about {
