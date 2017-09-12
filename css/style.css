@@ -59,7 +59,7 @@ img {
 /**Общие стили форм**/
 
 .form-field {
-  font: inherit;
+  font-family: 'Roboto', sans-serif;
   padding-left: 15px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -90,6 +90,7 @@ img {
 }
 
 .form-field:focus+.form-item .form-label {
+  font-family: 'Roboto', sans-serif;
   font-size: 11px;
   line-height: 13px;
   color: #5b9ddf;
@@ -138,6 +139,7 @@ img {
 }
 
 .site-navigation-link {
+  font-family: 'Roboto', sans-serif;
   position: relative;
   display: block;
   font-size: 16px;
@@ -151,7 +153,6 @@ img {
   display: block;
 }
 
-
 .site-navigation-link:hover {
   padding: 8px 14px;
   color: #323232;
@@ -164,7 +165,6 @@ img {
   border-radius: 15px;
   color: #fff;
   padding: 8px 14px;
-
 }
 
 .site-navigation-link-current:hover, .site-navigation-link-current:focus {
@@ -207,6 +207,7 @@ img {
 }
 
 .submenu .submenu-link {
+  font-family: 'Roboto', sans-serif;
   display: block;
   padding: 10px 20px;
   color: #323232;
@@ -226,6 +227,7 @@ img {
 }
 
 .submenu .submenu-title {
+  font-family: 'Roboto', sans-serif;
   display: block;
   color: #323232;
   font-size: 14px;
@@ -277,11 +279,13 @@ img {
 .user-navigation-item .full-basket:hover polygon {
   fill: #e84d37;
 }
+
+
 /**Окно поиска**/
 
 .search {
   position: relative;
-display: block;
+  display: block;
   width: 32px;
   height: 32px;
   padding: 0;
@@ -290,6 +294,7 @@ display: block;
 .search-link {
   position: relative;
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .search .search-icon {
@@ -297,7 +302,7 @@ display: block;
   display: block;
   width: 17px;
   height: 17px;
-  top: 8px;
+  top: -8px;
   left: 8px;
 }
 
@@ -326,9 +331,7 @@ display: block;
 
 .search:hover .search-box {
   display: block;
-
 }
-
 
 .search-form .form-field {
   box-sizing: border-box;
@@ -368,8 +371,10 @@ display: block;
 }
 
 .login .login-link {
+  font-family: 'Roboto', sans-serif;
   position: relative;
   display: inline-block;
+  vertical-align: top;
   padding: 7px 0px 8px 43px;
   border-radius: 25px;
   color: #fff;
@@ -391,7 +396,8 @@ display: block;
   display: none;
   position: absolute;
   z-index: 4;
-  top: 36px;;
+  top: 36px;
+  ;
   right: 0;
   width: 277px;
   background-color: #f8f7f4;
@@ -445,6 +451,7 @@ display: block;
 }
 
 .login-info-restore, .login-info-signin {
+  font-family: 'Roboto', sans-serif;
   color: #323232;
   font-size: 13px;
   line-height: 24px;
@@ -487,8 +494,10 @@ display: block;
 }
 
 .basket .basket-link {
+  font-family: 'Roboto', sans-serif;
   position: relative;
   display: inline-block;
+  vertical-align: top;
   border-radius: 25px;
   color: #fff;
   font-size: 14px;
@@ -521,7 +530,8 @@ display: block;
 
 .full-basket .basket-box {
   display: none;
-  top: 36px;;
+  top: 36px;
+  ;
   right: 0;
   position: absolute;
   background-color: #f8f7f4;
@@ -565,6 +575,7 @@ display: block;
   height: 11px;
   border: none;
   cursor: pointer;
+  outline: none;
 }
 
 .basket-item .image {
@@ -574,6 +585,7 @@ display: block;
 }
 
 .basket-item .info {
+  font-family: 'Roboto', sans-serif;
   font-size: 13px;
   line-height: 16px;
   color: #323232;
@@ -584,6 +596,7 @@ display: block;
 }
 
 .basket-item .weight {
+  font-family: 'Roboto', sans-serif;
   font-size: 13px;
   line-height: 16px;
   color: #323232;
@@ -598,6 +611,7 @@ display: block;
 }
 
 .basket-item .total-price {
+  font-family: 'Roboto', sans-serif;
   font-size: 13px;
   line-height: 16px;
   color: #323232;
@@ -608,6 +622,7 @@ display: block;
 }
 
 .order-price {
+  font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: flex-end;
   font-size: 15px;
@@ -617,6 +632,7 @@ display: block;
 }
 
 .basket-button {
+  font-family: 'Roboto', sans-serif;
   display: block;
   width: 170px;
   height: 45px;
@@ -638,6 +654,7 @@ display: block;
 }
 
 .user-contact-phone, .user-contact-time {
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
   color: #fff;
   font-size: 14px;
@@ -683,6 +700,7 @@ display: block;
 }
 
 .slide-title {
+  font-family: 'Roboto', sans-serif;
   display: block;
   width: 700px;
   margin: 0 auto 30px;
@@ -694,10 +712,11 @@ display: block;
 
 .slider .slide-button {
   display: inline-block;
+  vertical-align: top;
   width: 278px;
   height: 52px;
   padding-top: 5px;
-  font: inherit;
+  font-family: 'Roboto', sans-serif;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
@@ -731,6 +750,7 @@ display: block;
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: top;
   width: 20px;
   height: 20px;
   margin-right: 8px;
@@ -777,30 +797,32 @@ display: block;
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+
 }
 
 .gift {
   width: 560px;
+  min-height: 230px;
+  padding: 20px;
   position: relative;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   border-radius: 15px;
 }
 
 .gift-title {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
-  margin-top: 15px;
-  margin-left: 18px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
 }
 
 .gift-about {
-  margin: 0;
-  margin-left: 18px;
-  margin-bottom: 110px;
-  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 40px;
   line-height: 22px;
   font-weight: 600;
 }
@@ -816,15 +838,12 @@ display: block;
 .chocolate-gift {
   color: #fff;
   background-color: #8c695f;
-  background-image: url("../img/chocolate-bg.jpg");
+  background-image: url("../img/choco-bg.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 
 .gift-button {
-  position: absolute;
-  bottom: 22px;
-  right: 20px;
   padding-top: 10px;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   background: #f26843;
@@ -834,6 +853,7 @@ display: block;
   border: none;
   border-radius: 100px;
   height: 45px;
+  margin-left: auto;
 }
 
 .raspberry-gift-button {
@@ -869,6 +889,7 @@ display: block;
 }
 
 .popular-item-link {
+  font-family: 'Roboto', sans-serif;
   position: relative;
   font-size: 16px;
   line-height: 22px;
@@ -904,6 +925,7 @@ display: block;
 }
 
 .price-number {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   padding-right: 35px;
@@ -917,6 +939,7 @@ display: block;
 }
 
 .popular-item-weight {
+  font-family: 'Roboto', sans-serif;
   font-size: 30px;
   line-height: 45px;
   margin: 0;
@@ -986,6 +1009,7 @@ display: block;
   line-height: 30px;
   font-weight: 500;
   color: #323232;
+  font-family: 'Roboto', sans-serif;
 }
 
 .feature-list {
@@ -1014,6 +1038,7 @@ display: block;
   line-height: 22px;
   font-weight: 400;
   color: #323232;
+  font-family: 'Roboto', sans-serif;
 }
 
 .feature-list .feature-item::before {
@@ -1049,11 +1074,11 @@ display: block;
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+  min-height: 220px;
 }
 
 .news-blog {
   width: 560px;
-  height: 220px;
   background-color: #fff;
   background-image: url("../img/bg-news.jpg");
   background-position: center;
@@ -1070,6 +1095,7 @@ display: block;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
+  font-family: 'Roboto', sans-serif;
 }
 
 .news-item {
@@ -1081,6 +1107,7 @@ display: block;
   line-height: 30px;
   font-weight: 700;
   text-decoration: underline;
+  font-family: 'Roboto', sans-serif;
 }
 
 .news-link {
@@ -1096,8 +1123,6 @@ display: block;
 
 .news-subscription {
   width: 560px;
-  height: 220px;
-  padding: 5px;
   box-sizing: border-box;
   border: 5px solid rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
@@ -1109,15 +1134,21 @@ display: block;
   border-image-repeat: repeat;
 }
 
+.subscription-wrapper {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .news-subscription-info {
-  margin: 0;
-  padding-left: 20px;
-  padding-top: 30px;
-  padding-right: 20px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 35px;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
   color: #5a5a5a;
+  font-family: 'Roboto', sans-serif;
 }
 
 .news-subscription-form {
@@ -1128,8 +1159,8 @@ display: block;
 
 .news-subscription-form .form-field {
   display: inline-block;
-  margin-top: 35px;
-  margin-left: 20px;
+  vertical-align: top;
+  margin: auto;
   padding-left: 10px;
   padding-right: 10px;
   width: 368px;
@@ -1137,8 +1168,7 @@ display: block;
 }
 
 .subscription-button {
-  margin-top: 35px;
-  margin-right: 10px;
+  margin-left: 10px;
   width: 130px;
   height: 45px;
   cursor: pointer;
@@ -1149,10 +1179,10 @@ display: block;
 }
 
 .news-subscription-form .form-label {
-  font: inherit;
+  font-family: 'Roboto', sans-serif;
   position: absolute;
-  top: 5px;
-  left: -360px;
+  top: -10px;
+  left: -350px;
   cursor: text;
 }
 
@@ -1160,48 +1190,50 @@ display: block;
 /**Карта**/
 
 .address {
+  background-image: url("../img/map.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 430px;
+  background-size: cover;
   margin: 0;
-  padding: 0;
-  margin-bottom: 20px;
-  position: relative;
+  z-index: 1;
 }
 
-.address-map {
-  position: relative;
-  margin: 0;
+.map iframe {
+  width: 100%;
+  height: 430px;
+  position: absolute;
+  z-index: 2;
   top: 0;
   left: 0;
-}
-
-.map-image {
-  display: block;
-  width: 100%;
-}
-
-.address-wrapper {
-  position: relative;
-  margin: 0 auto;
-  width: 1200px;
+  margin: 0;
+  background-size: cover;
 }
 
 .address-location {
-  position: absolute;
-  top: -367px;
-  left: 872px;
-  padding: 30px 25px;
+  position: relative;
+  box-sizing: border-box;
   width: 300px;
   min-height: 305px;
+  padding: 30px 25px;
   background-color: #fefefe;
   border-radius: 15px;
+  top: -370px;
+  margin-left: auto;
+  z-index: 3;
+  margin-right: 55px;
 }
 
 .address-about {
   margin: 0;
   padding: 0;
+  margin-bottom: 5px;
   font-size: 14px;
   line-height: 20px;
   color: #323232;
   font-weight: 400;
+  font-family: 'Roboto', sans-serif;
 }
 
 .address-info {
@@ -1209,6 +1241,9 @@ display: block;
   line-height: 24px;
   color: #323232;
   font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 5px;
+  padding-bottom: 2px;
 }
 
 .address-location .place {
@@ -1226,10 +1261,6 @@ display: block;
   padding-top: 10px;
   text-align: center;
   border-radius: 25px;
-}
-
-.address-button:active .modal {
-  display: block;
 }
 
 
@@ -1257,6 +1288,7 @@ display: block;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
+  font-family: 'Roboto', sans-serif;
 }
 
 .breadcrumbs-link:not(.breadcrumbs-link-current)::after {
@@ -1284,6 +1316,7 @@ display: block;
   font-weight: 700;
   color: #fff;
   margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -1298,6 +1331,7 @@ display: block;
 }
 
 .filter-label {
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -1306,6 +1340,7 @@ display: block;
 }
 
 .filter-title {
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 16px;
   color: #fff;
@@ -1330,6 +1365,7 @@ display: block;
   background-image: url("../img/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: 170px center;
+  font-family: 'Roboto', sans-serif;
 }
 
 .sorting-select:hover {
@@ -1405,13 +1441,14 @@ display: block;
   border-radius: 25px;
   color: #fff;
   font-weight: 400;
-
+  font-family: 'Roboto', sans-serif;
 }
 
 .fat-filter .filter-label {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .fat-filter-wrapper input[type="radio"]+label {
@@ -1464,6 +1501,7 @@ display: block;
   color: #fff;
   font-weight: 400;
   padding: 8px 15px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .filler-filter-wrapper input[type="checkbox"]+label {
@@ -1510,6 +1548,7 @@ display: block;
   color: #fff;
   margin-left: 15px;
   font-weight: 400;
+  font-family: 'Roboto', sans-serif;
 }
 
 .filters .filters-button:hover {
@@ -1559,9 +1598,11 @@ display: block;
   font-weight: 700;
   text-shadow: 1px 0 3px rgba(49, 50, 53, 0.5);
   top: 210px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .catalog-item-weight {
+  font-family: 'Roboto', sans-serif;
   font-size: 30px;
   line-height: 45px;
   margin: 0;
@@ -1579,6 +1620,7 @@ display: block;
   color: #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   z-index: 4;
+  font-family: 'Roboto', sans-serif;
 }
 
 .catalog-item-link:hover {
@@ -1638,6 +1680,7 @@ display: block;
 
 .pagination-link {
   display: inline-block;
+  vertical-align: top;
   box-sizing: border-box;
   width: 27px;
   height: 27px;
@@ -1648,6 +1691,7 @@ display: block;
   line-height: 18px;
   font-weight: 400;
   color: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 
 .pagination-link:hover {
@@ -1671,6 +1715,7 @@ display: block;
   color: #353535;
   background-color: #fff;
   border-radius: 50%;
+  font-family: 'Roboto', sans-serif;
 }
 
 .pagination-item .current:hover, .pagination-item .current:active {
@@ -1725,6 +1770,7 @@ display: block;
 
 .social-link {
   display: inline-block;
+  vertical-align: top;
   width: 32px;
   height: 32px;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
@@ -1736,8 +1782,7 @@ display: block;
 }
 
 .social-link:active {
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.7),
-              inset 0px 2px 1px 0px black;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.7), inset 0px 2px 1px 0px black;
 }
 
 .info-list {
@@ -1777,6 +1822,7 @@ display: block;
   font-weight: 400;
   color: #e6ebe9;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  font-family: 'Roboto', sans-serif;
 }
 
 .info-link:hover, .info-link:focus {
@@ -1794,6 +1840,7 @@ display: block;
   line-height: 18px;
   font-weight: 400;
   color: #fefefe;
+  font-family: 'Roboto', sans-serif;
 }
 
 .footer-copyroght-link {
@@ -1815,7 +1862,6 @@ display: block;
 
 /**Окно обратной связи**/
 
-
 .modal {
   display: none;
   top: 120px;
@@ -1828,6 +1874,19 @@ display: block;
 .modal-show {
   display: block;
   position: fixed;
+  animation: modal-open 0.4s linear;
+}
+
+@keyframes modal-open {
+  0% {
+    transform: translate(1000px, 1000px);
+  }
+  50% {
+    transform: translate(500px, 500px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
 
 .modal-feedback {
@@ -1849,6 +1908,7 @@ display: block;
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
+  font-family: 'Roboto', sans-serif;
 }
 
 .feedback-form {
@@ -1882,7 +1942,7 @@ display: block;
 
 .feedback-form .form-field+.form-item .form-label {
   position: absolute;
-  top: -47px;
+  top: -42px;
   left: 15px;
   color: #999999;
   transition-duration: 0.2s;
@@ -1890,7 +1950,7 @@ display: block;
 
 .feedback-form .textarea-field+.form-item .form-label {
   position: absolute;
-  top: -160px;
+  top: -150px;
   left: 15px;
   color: #999999;
   transition-duration: 0.2s;
@@ -1901,12 +1961,14 @@ display: block;
   line-height: 13px;
   color: #5b9ddf;
   transform: translateY(-32px);
+  font-family: 'Roboto', sans-serif;
 }
 
 .feedback-button {
   align-self: flex-end;
   width: 140px;
   height: 45px;
+  outline: none;
 }
 
 
@@ -1914,7 +1976,7 @@ display: block;
 
 .button {
   display: inline-block;
-  font: inherit;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -1928,7 +1990,7 @@ display: block;
   color: #fff;
   border: none;
   border-radius: 100px;
-
+  outline: none;
 }
 
 .button:hover {

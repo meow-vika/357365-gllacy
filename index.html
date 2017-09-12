@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Gllacy Shop</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/min.style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 
 </head>
@@ -21,13 +21,13 @@
       <header class="main-header container">
         <!--Основная навигация-->
         <nav class="main-navigation">
-          <a class="main-header-logo" href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy"></a>
+          <img class="main-header-logo" src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy">
           <ul class="site-navigation">
-            <li class="site-navigation-item"><a class="site-navigation-link" href="catalog.html">Каталог</a>
+            <li class="site-navigation-item"><a class="site-navigation-link" href="#">Каталог</a>
               <ul class="submenu">
                 <li class="submenu-title">Новинки</li>
                 <li class="submenu-item">
-                  <a class="submenu-link" href="#">Сливочное</a>
+                  <a class="submenu-link" href="catalog.html">Сливочное</a>
                 </li>
                 <li class="submenu-item">
                   <a class="submenu-link" href="#">Щербеты</a>
@@ -270,14 +270,16 @@
             </div>
 
             <div class="news-subscription">
-              <p class="news-subscription-info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-              <form class="news-subscription-form" method="post">
-                <input class="form-field" type="email" name="subscription-email" id="subscription-email">
-                <div class="form-item">
-                  <label for="subscription-email" class="form-label">Электронная почта</label>
-                </div>
-                <button class="button subscription-button" type="submit">Отправить</button>
-              </form>
+              <div class="subscription-wrapper">
+                <p class="news-subscription-info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+                <form class="news-subscription-form" method="post">
+                  <input class="form-field" type="email" name="subscription-email" id="subscription-email">
+                  <div class="form-item">
+                    <label for="subscription-email" class="form-label">Электронная почта</label>
+                  </div>
+                  <button class="button subscription-button" type="submit">Отправить</button>
+                </form>
+              </div>
             </div>
           </section>
         </div>
@@ -285,23 +287,23 @@
         <!--Карта-->
         <section class="address">
           <h4 class="visually-hidden">Как нас найти</h4>
-          <div class="address-map">
-            <img class="map-image" src="img/map.jpg" width="1200" height="430" alt="Карта">
+          <div class="google-map">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894616014506!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1505127712223"
+              width="100%" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
-          <div class="address-wrapper">
-            <div class="address-location">
-              <div class="place">
-                <p class="address-about">Адрес главного офиса<br>и офлайн магазина:</p>
-                <span class="address-info">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
-              </div>
-              <div class="description">
-                <p class="address-about">Для заказов по телефону:</p>
-                <span class="address-info">8 812 450-25-25</span>
-                <p class="address-about">(с 10 до 20 ежедневно)</p>
-              </div>
-              <a class="button address-button" href="#">Форма обратной связи</a>
+          <div class="address-location">
+            <div class="place">
+              <p class="address-about">Адрес главного офиса<br>и офлайн магазина:</p>
+              <span class="address-info">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
             </div>
+            <div class="description">
+              <p class="address-about">Для заказов по телефону:</p>
+              <span class="address-info">8 812 450-25-25</span>
+              <p class="address-about">(с 10 до 20 ежедневно)</p>
+            </div>
+            <a class="button address-button" href="#">Форма обратной связи</a>
           </div>
+
         </section>
 
       </main>
@@ -392,35 +394,7 @@
     </div>
   </section>
 
-  <script type="text/javascript">
-    var link = document.querySelector(".address-button");
-    var modal = document.querySelector(".modal");
-    var close = modal.querySelector(".modal-close-button");
-    var form = modal.querySelector("form");
-    var email = modal.querySelector("[name=email]");
-    var comment = modal.querySelector("[name=comment]");
-    var storage = localStorage.getItem("email");
-    link.addEventListener("click", function(e) {
-      e.preventDefault();
-      modal.classList.add("modal-show");
-      var name = modal.querySelector("[name=name]");
-      if (storage) {
-        email.value = storage;
-      }
-      name.focus();
-    });
-    close.addEventListener("click", function(e) {
-      e.preventDefault();
-      modal.classList.remove("modal-show");
-    });
-    form.addEventListener("submit", function(e) {
-      if (!name.value || !email.value) {
-        e.preventDefault();
-        console.log("Нужно заполнить");
-      } else {
-        localStorage.setItem("email", email.value);
-      }
-    });
+  <script src="js/min.script.js" type="text/javascript">
   </script>
 </body>
 
